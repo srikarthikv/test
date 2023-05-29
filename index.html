@@ -37,7 +37,7 @@
   }
 
   function curlOne() {
-    fetch('http://10.0.0.4:8000', {
+    fetch('https://10.0.0.4:8000', {
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -56,7 +56,7 @@
 
   function curlTwo() {
     let absPath = prompt("Please enter the path.", "data/Dengue-National-Guidelines-2014.pdf");
-    fetch('http://10.0.0.4:8000/embedding', {  // Enter your IP address/host here
+    fetch('https://10.0.0.4:8000/embedding', {  // Enter your IP address/host here
 
       method: 'POST',
       mode: 'cors',
@@ -83,7 +83,7 @@
     let question = prompt("Please enter the question.");
     let document = prompt("Please enter the document path with name.", "vectorstore.pkl");
 
-    fetch('http://10.0.0.4:8000/qanda', {  // Enter your IP address/host here
+    fetch('https://10.0.0.4:8000/qanda', {  // Enter your IP address/host here
 
       method: 'POST',
       mode: 'cors',
